@@ -1,18 +1,7 @@
 ## Титул
-
-<br>
-
-<p align="center" style="font-size: 30px;">
-    <b>Вивчення Docker</b>
-</p>
-<p align="center" style="font-size: 24px;">
-    Виконав студент: Прокопенко Євгеній ІПЗ-4.04
-</p>
-<p align="center" style="font-size: 24px;">
-    з дисципліни: <b>"Розробка та програмування координатних систем"</b>
-</p>
-
-<br>
+## Вивчення Docker
+## Виконав студент: Прокопенко Євгеній ІПЗ-4.04
+## з дисципліни: **"Розробка та програмування координатних систем"**
 
 ## Розгортання проєкта
 
@@ -28,21 +17,17 @@
 > cd getting-started-todo-app
 
 **Структура завантаженої папки:** 
-<br>
-<div align="center">
-    <img src="screenshots/1_folder_structure.png" alt="Структура завантаженої папки" width="200px"  >
-</div>
+
+![Структура завантаженої папки](screenshots/1_folder_structure.png)
 
 #### 2. Компонування проєкту у Docker
 
 Команда консолі:
 > docker compose watch
 
-**Перевірка сайту за адресою `http://localhost`:** <br>
+**Перевірка сайту за адресою `http://localhost`:**
 
-<div align="center">
-    <img src="screenshots/2_site_test.png" alt="Перевірка сайту" width="500px"  >
-</div>
+![Перевірка сайту](screenshots/2_site_test.png)
 
 ## Внесення змін до проєкту
 
@@ -128,23 +113,17 @@ module.exports = async (req, res) => {
 Запустимо композицію у консолі:
 > docker compose watch
 
-**Перейдемо на сайт `http://localhost`:** <br>
-<br>
+**Перейдемо на сайт `http://localhost`:**
 
-<div align="center">
-    <img src="screenshots/3_site_test2.gif" alt="Перевірка сайту після виконання зміни" width="500px" >
-</div>
+![Перевірка сайту після виконання зміни](screenshots/3_site_test2.gif)
 
-<br>
 Як можна побачити, кожного разу при оновленні сторінки користувач отримуює різне привітання, а більша частина інтерфейсу украінізована.
 
 ## Публікація в DockerHub
 
 #### 1. Створимо публічний репозиторій на сайті `https://hub.docker.com` з назвою `docker-learn`:
 
-<div align="center">
-    <img src="screenshots/4_dockerhub.png" alt="Створення репозиторія на DockerHub" width="700px" >
-</div>
+![Створення репозиторія на DockerHub](screenshots/4_dockerhub.png)
 
 #### 2. Виконаємо будування докер проєкту.
 
@@ -156,11 +135,9 @@ module.exports = async (req, res) => {
 
 > $ docker image ls
 
-Результат: 
+**Результат:**
 
-<div align="center">
-    <img src="screenshots/5_repository_checkout.png" alt="Перевірка наявнасті докер зображення" width="700px" >
-</div>
+![Перевірка наявнасті докер зображення](screenshots/5_repository_checkout.png)
 
 #### 3. Виконаємо передачу проєкта у DockerHub.
 
@@ -170,9 +147,7 @@ module.exports = async (req, res) => {
 
 Відкриємо сайт `https://hub.docker.com` та перевіримо репозиторій `docker-learn`:
 
-<div align="center">
-    <img src="screenshots/6_dockerhub_update.png" alt="Перевірка наявнасті докер зображення" width="700px" >
-</div>
+![Перевірка наявнасті докер зображення](screenshots/6_dockerhub_update.png)
 
 **Як можна побачити, проект успішно завантажився у DockerHub.**
 
